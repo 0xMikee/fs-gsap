@@ -33,6 +33,10 @@ export const Controls = ({ timeLine }: any) => {
 
     const ctx = gsap.context(() => {
       timeLine.eventCallback("onUpdate", updateScrubber)
+
+      if (play && !timeLine.isActive()) {
+        setPlay(false)
+      }
     }, scrubber)
 
     gsap.registerPlugin(Draggable)

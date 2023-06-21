@@ -3,9 +3,10 @@ body {
   margin: 0;
   color: white;
   background-color: #00141e;
+  font-family: LivesportFinderLatin, sans-serif;
 }
 .content {
-  display: flex;
+  display: grid;
   min-height: 100vh;
   min-width: 100vw;
   justify-content: center;
