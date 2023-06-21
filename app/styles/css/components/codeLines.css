@@ -15,6 +15,11 @@
   hyphens: auto;
   line-height: 18px;
 }
+@media only screen and (max-width: 639px) {
+  .codeLines__row {
+    font-size: 12px;
+  }
+}
 .codeLines__row--1,
 .codeLines__row--2,
 .codeLines__row--3 {
