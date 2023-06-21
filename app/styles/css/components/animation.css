@@ -1,0 +1,9 @@
+.animation {
+  display: grid;
+  justify-items: center;
+}
+.animation__logo {
+  width: 350px;
+  visibility: hidden;
+  margin-bottom: 15px;
+}

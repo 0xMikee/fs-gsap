@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "LivesportFinderLatin";
+  src: url("../../../../public/fonts/LivesportFinderLatin.woff2") format("woff2");
+}
+.controls__track {
+  width: 345px;
+  height: 5px;
+  background-color: white;
+  border-radius: 4px;
+}
+.controls__timeLine {
+  display: flex;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+}
+.controls__scrubber {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #555e61;
+  position: relative;
+  top: -8px;
+  border-radius: 4px;
+}
+.controls__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  gap: 20px;
+}
+.controls__button {
+  display: flex;
+  background-color: transparent;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #555e61;
+  padding: 4px;
+  align-items: center;
+}
+.controls__button:hover {
+  cursor: pointer;
+}
+.controls__icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.controls__showFps {
+  display: flex;
+  align-items: center;
+}
+.controls__checkBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: LivesportFinderLatin, sans-serif;
+  user-select: none;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #555e61;
+  margin: 0;
+  border-radius: 4px;
+}
+.controls__checkBox:hover {
+  cursor: pointer;
+}
+.controls__checkBox--input {
+  display: none;
+}
+.controls__checkBox--input:checked ~ .controls__checkBox {
+  border: 1px solid #00a83f;
+  color: #14dc4b;
+}
