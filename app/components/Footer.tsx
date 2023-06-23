@@ -18,7 +18,7 @@ export const Footer = () => {
       </a>
       <a
         className="footer__sourceCodeLink"
-        href="https://codepen.io/chrisgannon/pen/xxyypbg"
+        href="https://artsexperiments.withgoogle.com/meroe"
         target="_blank"
         rel="noreferrer"
       >
