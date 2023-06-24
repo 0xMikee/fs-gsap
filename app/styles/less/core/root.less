@@ -1,3 +1,5 @@
+@import "breakpoints";
+
 body {
   padding: 0;
   margin: 0;
@@ -8,7 +10,12 @@ body {
 
 .content {
   display: grid;
-  height: 100vh;
   justify-content: center;
-  align-items: flex-end;
+  align-items: start;
+  height: 55vh;
+
+  @media only screen and (max-width: @breakpoint-middle) {
+    align-items: center;
+    height: 72vh;
+  }
 }

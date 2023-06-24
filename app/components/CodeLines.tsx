@@ -1,7 +1,7 @@
 export const CodeLines = () => {
   return (
     <div className="codeLines">
-      <pre className="codeLines__row codeLines__row--1" datatype="JS">
+      <pre className="codeLines__row codeLines__row--1">
         <code>
           .<span className="keyword">from</span>(<span className="className">".circle"</span>
           {`, {`} rotate<span className="symbol">: -</span>
@@ -16,12 +16,12 @@ export const CodeLines = () => {
           {`})`}
         </code>
       </pre>
-      <pre className="codeLines__row codeLines__row--2" datatype="JS">
+      <pre className="codeLines__row codeLines__row--2">
         <code>
           .<span className="keyword">from</span>(<span className="className">".triangle"</span>
           {`, {`} duration<span className="symbol">:</span>
-          <span className="value"> 0.4</span>, x<span className="symbol">:</span> <span className="value">20</span>, y:
-          -<span className="value">10</span>, opacity<span className="symbol">:</span> <span className="value">0</span>
+          <span className="value"> 0.4</span>, x<span className="symbol">:</span> <span className="value">25</span>, y<span className="symbol">:
+          -</span><span className="value">5</span>, opacity<span className="symbol">:</span> <span className="value">0</span>
           {` })`}
         </code>
         <code>
@@ -33,7 +33,7 @@ export const CodeLines = () => {
           {`)`}
         </code>
       </pre>
-      <pre className="codeLines__row codeLines__row--3" datatype="JS">
+      <pre className="codeLines__row codeLines__row--3">
         <code>
           .<span className="keyword">from</span>(<span className="className">".sport"</span>
           {`, {`} duration<span className="symbol">:</span> <span className="value">0.5</span>, x

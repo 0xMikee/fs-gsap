@@ -4,13 +4,39 @@
   display: grid;
   justify-items: center;
 
+   &--clickable {
+     gap: 60px;
+   }
+
   &__logo {
     width: 350px;
     visibility: hidden;
     margin-bottom: 15px;
+
+    &--symbol {
+      width: 150px;
+      height: 150px;
+    }
   }
 
-  @media only screen and (max-width: @breakpoint-middle) {
-    margin-top: 75px;
+  &__clickIcon {
+    width: 30px;
+    height: 30px;
+    rotate: 180deg;
+    color: #ffffff;
+  }
+
+  &__symbolLogoWrapper {
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    
+    &:hover {
+      cursor: pointer;
+
+      .animation__clickIcon {
+        opacity: 0.7;
+      }
+    }
   }
 }

@@ -16,7 +16,7 @@ export const Animation = () => {
         .from(".codeLines__row--1", { duration: 0.7, autoAlpha: 0 })
         .from(".circle", { rotate: -360, transformOrigin: "50% 50%", duration: 0.7, opacity: 0 }, "<")
         .from(".codeLines__row--2", { duration: 0.5, autoAlpha: 0 })
-        .from(".triangle", { duration: 0.4, x: 20, y: -6, opacity: 0 }, "<")
+        .from(".triangle", { duration: 0.4, x: 25, y: -5, opacity: 0 }, "<")
         .from(".live", { duration: 0.5, x: -15, opacity: 0 }, "<")
         .from(".codeLines__row--3", { duration: 0.5, autoAlpha: 0 })
         .from(".sport", { duration: 0.5, x: -10, opacity: 0 }, "<")

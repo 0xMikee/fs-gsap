@@ -5,7 +5,12 @@ import { useIsomorphicLayoutEffect } from "~/hooks/useIsomorphicLayoutEffect"
 import { gsap } from "gsap"
 import Draggable from "gsap/dist/Draggable"
 
-export const Controls = ({ timeLine }: any) => {
+type Props = {
+  timeLine: GSAPTimeline
+  onlyFpsToggle?: boolean
+}
+
+export const Controls = ({ timeLine, onlyFpsToggle }: Props) => {
   const [showFps, setShowFps] = useState<boolean>(false)
   const [play, setPlay] = useState<boolean>(true)
 
@@ -60,18 +65,24 @@ export const Controls = ({ timeLine }: any) => {
     <>
       {showFps && <FpsView />}
       <div className="controls">
-        <div className="controls__timeLine">
-          <div className="controls__track">
-            <div className="controls__scrubber" />
+        {!onlyFpsToggle && (
+          <div className="controls__timeLine">
+            <div className="controls__track">
+              <div className="controls__scrubber" />
+            </div>
           </div>
-        </div>
+        )}
         <div className="controls__buttons">
-          <button className="controls__button" onClick={restartAnimation}>
-            <IconSVG id="refresh" iconClass="controls__icon" />
-          </button>
-          <button className="controls__button" onClick={pauseAnimation}>
-            <IconSVG id={`${play ? "pause" : "play"}`} iconClass="controls__icon" />
-          </button>
+          {!onlyFpsToggle && (
+            <>
+              <button className="controls__button" onClick={restartAnimation}>
+                <IconSVG id="refresh" iconClass="controls__icon" />
+              </button>
+              <button className="controls__button" onClick={pauseAnimation}>
+                <IconSVG id={`${play ? "pause" : "play"}`} iconClass="controls__icon" />
+              </button>
+            </>
+          )}
           <div className="controls__showFps">
             <input className="controls__checkBox--input" type="checkbox" id="fpsMeter" onClick={toggleFps} />
             <label className="controls__checkBox" htmlFor="fpsMeter">
