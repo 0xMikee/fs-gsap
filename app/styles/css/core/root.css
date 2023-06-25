@@ -9,11 +9,5 @@ body {
   display: grid;
   justify-content: center;
   align-items: start;
-  height: 55vh;
-}
-@media only screen and (max-width: 639px) {
-  .content {
-    align-items: center;
-    height: 72vh;
-  }
+  height: 475px;
 }

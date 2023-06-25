@@ -20,7 +20,7 @@ export const Controls = ({ timeLine, onlyFpsToggle }: Props) => {
 
   const restartAnimation = () => {
     setPlay(true)
-    timeLine.restart(!timeLine.restart())
+    timeLine.restart()
   }
 
   const pauseAnimation = () => {
@@ -29,7 +29,7 @@ export const Controls = ({ timeLine, onlyFpsToggle }: Props) => {
   }
 
   useIsomorphicLayoutEffect(() => {
-    const TIMELINE_WIDTH = 370
+    const TIMELINE_WIDTH = 338
     const scrubber = gsap.to(".controls__scrubber", { x: TIMELINE_WIDTH, ease: "none", paused: true })
 
     const updateScrubber = () => {
@@ -38,23 +38,27 @@ export const Controls = ({ timeLine, onlyFpsToggle }: Props) => {
 
     const ctx = gsap.context(() => {
       timeLine.eventCallback("onUpdate", updateScrubber)
-      timeLine.eventCallback("onComplete", () => setPlay(false))
+      timeLine.eventCallback("onComplete", () => {
+        setPlay(false);
+        timeLine.pause();
+      })
     }, scrubber)
 
     gsap.registerPlugin(Draggable)
 
     Draggable.create(".controls__scrubber", {
       type: "x",
-      bounds: { maxX: 333, minX: 0 },
-      onPress: function () {
-        timeLine.pause()
-      },
+      bounds: { maxX: 305, minX: 0 },
       onDrag: function () {
         timeLine.time((2 * this.x) / TIMELINE_WIDTH)
       },
       onRelease: function () {
-        setPlay(true)
-        timeLine.resume()
+        if (timeLine.paused()) {
+          setPlay(false)
+        } else {
+          setPlay(true)
+          timeLine.resume()
+        }
       }
     })
 

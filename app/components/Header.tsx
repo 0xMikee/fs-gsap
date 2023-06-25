@@ -1,4 +1,3 @@
-import { IconSVG } from "~/components/IconSVG"
 import { NavLink } from "~/components/NavLink"
 
 export const Header = () => {

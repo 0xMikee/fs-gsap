@@ -1,12 +1,18 @@
 @import "../core/breakpoints";
 
 .footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  display: grid;
+  justify-items: center;
+  gap: 32px;
+  margin: 100px 0 5px;
 
   @media only screen and (max-width: @breakpoint-middle) {
     margin-top: 15px;
+  }
+
+  &__sourceCodeLinks {
+    display: flex;
+    justify-content: center;
   }
 
   &__sourceCodeLink {
@@ -47,5 +53,13 @@
     @media only screen and (max-width: @breakpoint-middle) {
       margin-right: unset;
     }
+  }
+
+  &__gsapLink {
+
+  }
+
+  &__gsapLogo {
+    width: 150px;
   }
 }

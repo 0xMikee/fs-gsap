@@ -20,8 +20,9 @@ export const CodeLines = () => {
         <code>
           .<span className="keyword">from</span>(<span className="className">".triangle"</span>
           {`, {`} duration<span className="symbol">:</span>
-          <span className="value"> 0.4</span>, x<span className="symbol">:</span> <span className="value">25</span>, y<span className="symbol">:
-          -</span><span className="value">5</span>, opacity<span className="symbol">:</span> <span className="value">0</span>
+          <span className="value"> 0.4</span>, x<span className="symbol">:</span> <span className="value">25</span>, y
+          <span className="symbol">: -</span>
+          <span className="value">5</span>, opacity<span className="symbol">:</span> <span className="value">0</span>
           {` })`}
         </code>
         <code>

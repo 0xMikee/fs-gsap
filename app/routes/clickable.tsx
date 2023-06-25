@@ -1,5 +1,5 @@
-import { gsap } from "gsap"
 import React, { useRef } from "react"
+import { gsap } from "gsap"
 import { SvgSymbolLogo } from "~/components/SvgSymbolLogo"
 import { useIsomorphicLayoutEffect } from "~/hooks/useIsomorphicLayoutEffect"
 import { Controls } from "~/components/Controls"
@@ -19,6 +19,7 @@ export default function Clickable() {
       timeLine.to(".circle", { rotate: 360, transformOrigin: "50% 50%" })
       timeLine.to(".triangle", { x: 0, y: 0, opacity: 1, duration: 0.2 })
     }, animationRef)
+
     return () => ctx.revert()
   }, [timeLine])
 

@@ -1,12 +1,17 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  display: grid;
+  justify-items: center;
+  gap: 32px;
+  margin: 100px 0 5px;
 }
 @media only screen and (max-width: 639px) {
   .footer {
     margin-top: 15px;
   }
+}
+.footer__sourceCodeLinks {
+  display: flex;
+  justify-content: center;
 }
 .footer__sourceCodeLink {
   display: flex;
@@ -44,4 +49,7 @@
   .footer__icon {
     margin-right: unset;
   }
+}
+.footer__gsapLogo {
+  width: 150px;
 }

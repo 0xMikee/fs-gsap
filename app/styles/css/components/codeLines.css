@@ -1,6 +1,6 @@
 .codeLines {
   display: grid;
-  gap: 10px;
+  gap: 15px;
   margin-top: 15px;
   padding: 10px;
 }
