@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__sourceCodeLinks">
-        <a className="footer__sourceCodeLink" href="https://github.com/Z3US20/fs-gsap" target="_blank" rel="noreferrer">
+        <a className="footer__sourceCodeLink" href="https://github.com/0xMikee/fs-gsap" target="_blank" rel="noreferrer">
           <IconSVG id="github" iconClass="footer__icon" />
           <div className="footer__sourceCodeText">source code</div>
         </a>
