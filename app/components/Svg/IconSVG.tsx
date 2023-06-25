@@ -1,6 +1,6 @@
 import React from "react"
-import SymbolsSVG from "../../public/images/svg/symbols.svg"
-import { IconSVGSelector } from "~/components/IconSVGSelector"
+import SymbolsSVG from "../../../public/images/svg/symbols.svg"
+import { IconSVGSelector } from "~/components/Svg/IconSVGSelector"
 
 export interface IconSVGProps {
   id: string

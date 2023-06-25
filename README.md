@@ -1,1 +1,1 @@
-GSAP on Flashscore
+GSAP 3 | Flashscore

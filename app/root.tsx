@@ -1,8 +1,8 @@
 import type { LinksFunction } from "@remix-run/node"
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react"
 import { styleSheet } from "~/utils/styleSheet"
-import { Footer } from "~/components/Footer"
-import { Header } from "~/components/Header"
+import { Footer } from "~/components/Core/Footer"
+import { Header } from "~/components/Core/Header"
 
 export const links: LinksFunction = () => {
   return styleSheet

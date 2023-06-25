@@ -1,11 +1,11 @@
 import React, { useRef } from "react"
 import { gsap } from "gsap"
-import { SvgSymbolLogo } from "~/components/SvgSymbolLogo"
+import { SvgSymbolLogo } from "~/components/Svg/SvgSymbolLogo"
 import { useIsomorphicLayoutEffect } from "~/hooks/useIsomorphicLayoutEffect"
-import { Controls } from "~/components/Controls"
-import { IconSVG } from "~/components/IconSVG"
+import { Controls } from "~/components/Animation/Controls"
+import { IconSVG } from "~/components/Svg/IconSVG"
 
-export default function Clickable() {
+export const AnimationOnClick = () => {
   const animationRef = useRef<HTMLInputElement | null>(null)
   const timeLine = gsap.timeline({ paused: true })
 

@@ -1,9 +1,9 @@
 import { useRef } from "react"
 import { gsap } from "gsap"
 import { useIsomorphicLayoutEffect } from "~/hooks/useIsomorphicLayoutEffect"
-import { Controls } from "~/components/Controls"
-import { CodeLines } from "~/components/CodeLines"
-import { SvgLogo } from "~/components/SvgLogo"
+import { Controls } from "~/components/Animation/Controls"
+import { CodeLines } from "~/components/Animation/CodeLines"
+import { SvgLogo } from "~/components/Svg/SvgLogo"
 
 export const Animation = () => {
   const animationRef = useRef<HTMLInputElement | null>(null)

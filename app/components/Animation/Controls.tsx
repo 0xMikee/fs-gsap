@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { FpsView } from "react-fps"
-import { IconSVG } from "~/components/IconSVG"
+import { IconSVG } from "~/components/Svg/IconSVG"
 import { useIsomorphicLayoutEffect } from "~/hooks/useIsomorphicLayoutEffect"
 import { gsap } from "gsap"
 import Draggable from "gsap/dist/Draggable"

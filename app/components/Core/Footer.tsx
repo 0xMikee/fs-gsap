@@ -1,5 +1,5 @@
-import { IconSVG } from "~/components/IconSVG"
-import gsapLogo from "../../public/images/png/gsapLogo.png"
+import { IconSVG } from "~/components/Svg/IconSVG"
+import gsapLogo from "../../../public/images/png/gsapLogo.png"
 
 export const Footer = () => {
   return (
@@ -15,8 +15,8 @@ export const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <IconSVG id="examples" iconClass="footer__icon" />
-          <div className="footer__sourceCodeText">Example 1</div>
+          <IconSVG id="svg" iconClass="footer__icon" />
+          <div className="footer__sourceCodeText">Codepen example</div>
         </a>
         <a
           className="footer__sourceCodeLink"
@@ -25,10 +25,10 @@ export const Footer = () => {
           rel="noreferrer"
         >
           <IconSVG id="examples" iconClass="footer__icon" />
-          <div className="footer__sourceCodeText">Example 2</div>
+          <div className="footer__sourceCodeText">Live website</div>
         </a>
       </div>
-      <a className="footer__gsapLink" href="https://greensock.com/gsap/" target="_blank" rel="noreferrer">
+      <a className="footer__gsapLink" href="~/components/core/Footer" target="_blank" rel="noreferrer">
         <img className="footer__gsapLogo" src={gsapLogo} alt="gsap logo" />
       </a>
     </div>

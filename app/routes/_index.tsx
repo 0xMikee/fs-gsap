@@ -1,9 +1,7 @@
-import { Animation } from "~/components/Animation"
+import { Animation } from "~/components/Animation/Animation"
 
-export default function Index() {
-  return (
-    <>
-      <Animation />
-    </>
-  )
+const Index = () => {
+  return <Animation />
 }
+
+export default Index

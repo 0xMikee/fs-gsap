@@ -1,9 +1,9 @@
-import { NavLink } from "~/components/NavLink"
+import { NavLink } from "~/components/Core/NavLink"
 
 export const Header = () => {
   const LINKS = [
     { title: "onPlay", to: "/" },
-    { title: "onClick", to: "/clickable" }
+    { title: "onClick", to: "/onClick" }
   ]
 
   return (
