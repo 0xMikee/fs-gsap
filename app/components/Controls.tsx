@@ -39,8 +39,8 @@ export const Controls = ({ timeLine, onlyFpsToggle }: Props) => {
     const ctx = gsap.context(() => {
       timeLine.eventCallback("onUpdate", updateScrubber)
       timeLine.eventCallback("onComplete", () => {
-        setPlay(false);
-        timeLine.pause();
+        setPlay(false)
+        timeLine.pause()
       })
     }, scrubber)
 
