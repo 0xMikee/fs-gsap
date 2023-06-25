@@ -29,6 +29,8 @@ export const Controls = ({ timeLine, onlyFpsToggle }: Props) => {
   }
 
   useIsomorphicLayoutEffect(() => {
+    if (onlyFpsToggle) return
+
     const TIMELINE_WIDTH = 338
     const scrubber = gsap.to(".controls__scrubber", { x: TIMELINE_WIDTH, ease: "none", paused: true })
 

@@ -1,6 +1,8 @@
 {
+  "name": "fs-gsap",
   "private": true,
   "sideEffects": false,
+  "author": "Mike",
   "scripts": {
     "build": "remix build",
     "deploy": "fly deploy --remote-only",
@@ -36,6 +38,6 @@
     "typescript": "^5.0.4"
   },
   "engines": {
-    "node": ">=14"
+    "node": "18"
   }
 }
