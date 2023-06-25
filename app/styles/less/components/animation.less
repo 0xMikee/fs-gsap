@@ -14,8 +14,13 @@
     margin-bottom: 15px;
 
     &--symbol {
-      width: 150px;
-      height: 150px;
+      width: 125px;
+      height: 125px;
+
+      @media only screen and (max-width: @breakpoint-middle) {
+        width: 100px;
+        height: 100px;
+      }
     }
   }
 
@@ -30,6 +35,10 @@
     display: grid;
     justify-items: center;
     gap: 30px;
+
+    @media only screen and (max-width: @breakpoint-middle) {
+      gap: 15px;
+    }
 
     &:hover {
       cursor: pointer;

@@ -14,7 +14,7 @@ export const Animation = () => {
       timeLine
         .from(".animation__logo", { duration: 0.1, autoAlpha: 0 })
         .from(".codeLines__row--1", { duration: 0.7, autoAlpha: 0 })
-        .from(".circle", { rotate: -360, transformOrigin: "50% 50%", duration: 0.7, opacity: 0 }, "<")
+        .from(".circle", { duration: 0.7, rotate: -360, transformOrigin: "50% 50%", opacity: 0 }, "<")
         .from(".codeLines__row--2", { duration: 0.5, autoAlpha: 0 })
         .from(".triangle", { duration: 0.4, x: 25, y: -5, opacity: 0 }, "<")
         .from(".live", { duration: 0.5, x: -15, opacity: 0 }, "<")

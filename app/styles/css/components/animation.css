@@ -11,8 +11,14 @@
   margin-bottom: 15px;
 }
 .animation__logo--symbol {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
+}
+@media only screen and (max-width: 639px) {
+  .animation__logo--symbol {
+    width: 100px;
+    height: 100px;
+  }
 }
 .animation__clickIcon {
   width: 30px;
@@ -24,6 +30,11 @@
   display: grid;
   justify-items: center;
   gap: 30px;
+}
+@media only screen and (max-width: 639px) {
+  .animation__symbolLogoWrapper {
+    gap: 15px;
+  }
 }
 .animation__symbolLogoWrapper:hover {
   cursor: pointer;

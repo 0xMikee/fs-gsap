@@ -4,14 +4,14 @@ export const CodeLines = () => {
       <pre className="codeLines__row codeLines__row--1">
         <code>
           .<span className="keyword">from</span>(<span className="className">".circle"</span>
-          {`, {`} rotate<span className="symbol">: -</span>
+          {`, {`} duration<span className="symbol">:</span>
+          <span className="value"> 0.7</span>, rotate<span className="symbol">: -</span>
           <span className="value">360</span>,
           <span className="variable">
             {" "}
             transformOrigin<span className="symbol">: </span>
           </span>
-          <span className="value">"50% 50%"</span>, duration<span className="symbol">:</span>
-          <span className="value"> 0.7</span>, opacity<span className="symbol">:</span>
+          <span className="value">"50% 50%"</span>, opacity<span className="symbol">:</span>
           <span className="value"> 0 </span>
           {`})`}
         </code>
