@@ -28,7 +28,7 @@ export const Footer = () => {
           <div className="footer__sourceCodeText">Example 2</div>
         </a>
       </div>
-      <a className="footer__gsapLink" href="https://greensock.com/gsap/" target="_blank">
+      <a className="footer__gsapLink" href="https://greensock.com/gsap/" target="_blank" rel="noreferrer">
         <img className="footer__gsapLogo" src={gsapLogo} alt="gsap logo" />
       </a>
     </div>
