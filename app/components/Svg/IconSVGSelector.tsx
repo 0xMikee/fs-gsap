@@ -2,7 +2,7 @@ import React from "react"
 import type { IconSVGProps } from "~/components/Svg/IconSVG"
 
 interface IconSVGSelectorProps extends IconSVGProps {
-  svg: any
+  svg: string
 }
 
 export const IconSVGSelector = ({ svg, id, iconClass }: IconSVGSelectorProps) => {
