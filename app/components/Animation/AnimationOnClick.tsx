@@ -15,9 +15,10 @@ export const AnimationOnClick = () => {
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      timeLine.set(".triangle", { x: 10, y: -5, opacity: 0 })
-      timeLine.to(".circle", { rotate: 360, transformOrigin: "50% 50%" })
-      timeLine.to(".triangle", { x: 0, y: 0, opacity: 1, duration: 0.2 })
+      timeLine
+        .set(".triangle", { x: 10, y: -5, opacity: 0 })
+        .to(".circle", { rotate: 360, transformOrigin: "50% 50%" })
+        .to(".triangle", { x: 0, y: 0, opacity: 1, duration: 0.2 })
     }, animationRef)
 
     return () => ctx.revert()
