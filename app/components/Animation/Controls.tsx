@@ -53,14 +53,6 @@ export const Controls = ({ timeLine, onlyFpsToggle }: Props) => {
       bounds: ".controls__track",
       onDrag: function () {
         timeLine.time((2 * this.x) / TIMELINE_WIDTH)
-      },
-      onRelease: function () {
-        if (timeLine.paused()) {
-          setPlay(false)
-        } else {
-          setPlay(true)
-          timeLine.resume()
-        }
       }
     })
 
