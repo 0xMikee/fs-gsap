@@ -31,7 +31,7 @@ export const Controls = ({ timeLine, onlyFpsToggle }: Props) => {
   useIsomorphicLayoutEffect(() => {
     if (onlyFpsToggle) return
 
-    const TIMELINE_WIDTH = 338
+    const TIMELINE_WIDTH = 333
     const scrubber = gsap.to(".controls__scrubber", { x: TIMELINE_WIDTH, ease: "none", paused: true })
 
     const updateScrubber = () => {
@@ -50,7 +50,7 @@ export const Controls = ({ timeLine, onlyFpsToggle }: Props) => {
 
     Draggable.create(".controls__scrubber", {
       type: "x",
-      bounds: { maxX: 305, minX: 0 },
+      bounds: ".controls__track",
       onDrag: function () {
         timeLine.time((2 * this.x) / TIMELINE_WIDTH)
       },

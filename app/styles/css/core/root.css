@@ -8,6 +8,6 @@ body {
 .content {
   display: grid;
   justify-content: center;
-  align-items: start;
-  height: 475px;
+  align-items: center;
+  height: 60vh;
 }
