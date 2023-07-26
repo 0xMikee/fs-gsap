@@ -1,7 +1,7 @@
 export const SvgLogo = () => {
   return (
     <>
-      {/* prettier-ignore  dshf*/}
+      {/* prettier-ignore */}
       <svg className="animation__logo" viewBox="0 0 174 32" fill="currentColor">
         <path className="triangle" fill="#eb0037" d="M23.419 0.0556641L17.2734 13.2351L43.8395 0.0556641H23.419Z" />
         <g className="circle">
