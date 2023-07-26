@@ -24,7 +24,7 @@ export default function App() {
           <Outlet />
         </div>
         <Footer />
-        <ScrollRestoration />
+        <ScrollRestoration default={false} />
         <Scripts />
         <LiveReload />
       </body>
