@@ -20,7 +20,7 @@ export default function App() {
       </head>
       <body>
         <Header />
-        <div className="content bla">
+        <div className="content">
           <Outlet />
         </div>
         <Footer />
